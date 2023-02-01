@@ -1,0 +1,52 @@
+@import "./../../../scss/variables.scss";
+
+.navbar {
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 85%;
+	left: 50%;
+	transform: translateX(-50%);
+	position: fixed;
+	z-index: 10;
+	top: 0;
+
+	.navbar__brand {
+	}
+
+	.navbar__items {
+		display: flex;
+		align-items: center;
+		font-size: $sm;
+		column-gap: 2rem;
+		position: relative;
+
+		.navbar__item {
+			color: $text-gray;
+			transition: 200ms;
+			cursor: pointer;
+			position: relative;
+
+			&:hover {
+				color: $primary;
+			}
+
+			&.black {
+				color: $text-black;
+			}
+
+			.badge {
+				position: absolute;
+				background: #e7462d;
+				font-size: 0.5rem;
+				color: white;
+				text-transform: uppercase;
+				padding: 3px 9px;
+				border-radius: 0.5rem;
+				top: -15px;
+				right: -15px;
+			}
+		}
+	}
+}

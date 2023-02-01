@@ -1,0 +1,28 @@
+@import "./../../../scss/variables.scss";
+
+.button {
+	color: white;
+	background: $primary;
+	padding: 10px 18px;
+	border-radius: 100px;
+	border: none;
+	cursor: pointer;
+	transition: 200ms;
+
+	&.primary {
+		background: $primary;
+
+		&:hover {
+			background: #638612;
+		}
+	}
+
+	&.secondary {
+		background: #f2f2f2;
+		color: $text-black;
+
+		&:hover {
+			background: #cccccc;
+		}
+	}
+}

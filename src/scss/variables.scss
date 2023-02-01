@@ -1,14 +1,28 @@
 // colors
-$primary: #8BAC3E;
+$primary: #8bac3e;
 
-$cyan: #40A2B1;
-$light-cyan: #E6F3F5;
+$cyan: #40a2b1;
+$light-cyan: #e6f3f5;
 
-$blue:#405EB6
-$light-blue: #EAEEFA
+$blue: #405eb6;
+$light-blue: #eaeefa;
 
-$pink: #B23F74;
-$light-pink:#F9EEF3
+$pink: #b23f74;
+$light-pink: #f9eef3;
 
-$green: #A4B441;
-$light-green: #F3F7D9
+$green: #a4b441;
+$light-green: #f3f7d9;
+
+$text-black: #333333;
+$text-gray: #6b7280;
+
+// breakpoints
+$laptop: 1024px;
+$desktop: 1280px;
+
+// fonts
+$xs: 0.75rem;
+$sm: 0.875rem;
+$base: 1rem;
+$lg: 1.125rem;
+$xl: 1.25rem;
