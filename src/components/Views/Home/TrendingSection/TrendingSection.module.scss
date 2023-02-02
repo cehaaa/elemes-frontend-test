@@ -1,0 +1,25 @@
+@import "./../../../../scss/variables.scss";
+
+.trending__section__container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 150px;
+}
+
+.trending__list {
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+}
+
+@media (max-width: $mobile) {
+	.trending__list {
+		grid-template-columns: 1fr;
+	}
+
+	.trending__section__container {
+		display: none;
+	}
+}

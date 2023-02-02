@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
 
+@import "./variables.scss";
+
 * {
 	margin: 0;
 	padding: 0;
@@ -7,7 +9,11 @@
 	font-family: "Rubik", sans-serif;
 }
 
-.image-icon {
+.image--icon {
 	width: 47px;
 	height: 52px;
+}
+
+.text--black {
+	color: $text-black;
 }

@@ -1,6 +1,46 @@
+@import "./../../../scss/variables.scss";
+
 .container {
-	width: 75%;
+	width: 100%;
 	min-height: calc(100vh - 80px);
-	margin: 0 auto;
-	padding: 1rem 0;
+	padding: 2rem 0;
+}
+
+.header {
+	width: 730px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+}
+
+.body {
+	margin: 2rem 0;
+}
+
+.title {
+	font-size: 38px;
+	line-height: 2.5rem;
+	font-weight: 500;
+
+	&.primary {
+		color: $primary;
+	}
+}
+
+@media (max-width: $mobile) {
+	.header {
+		width: 100%;
+	}
+
+	.title {
+		font-size: 24px;
+	}
+
+	.header {
+		row-gap: 0;
+	}
+
+	.body {
+		margin: 1rem 0;
+	}
 }

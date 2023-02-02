@@ -1,0 +1,13 @@
+@import "./../../../scss/variables.scss";
+
+.container {
+	width: $desktop;
+	margin: 0 auto;
+}
+
+@media (max-width: $mobile) {
+	.container {
+		width: 100%;
+		padding: 0 20px;
+	}
+}

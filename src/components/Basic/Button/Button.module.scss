@@ -1,9 +1,10 @@
 @import "./../../../scss/variables.scss";
 
 .button {
+	font-size: $base;
 	color: white;
 	background: $primary;
-	padding: 10px 18px;
+	padding: 12px 20px;
 	border-radius: 100px;
 	border: none;
 	cursor: pointer;

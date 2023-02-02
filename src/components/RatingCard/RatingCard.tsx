@@ -2,9 +2,9 @@ import React from "react";
 
 import styles from "./RatingCard.module.scss";
 
-import StarIcon from "../icons/StarIcon/StarIcon";
+import StarIcon from "../Basic/icons/StarIcon/StarIcon";
 
-import HeroImage from "./../../../assets/hero.png";
+import HeroImage from "./../../assets/hero.png";
 
 const RatingCard: React.FunctionComponent = () => {
 	return (
@@ -17,7 +17,9 @@ const RatingCard: React.FunctionComponent = () => {
 					{Array(5)
 						.fill(0)
 						.map((el, index) => {
-							return <StarIcon size='sm' active={index + 1 !== 5} />;
+							return (
+								<StarIcon key={index} size='sm' active={index + 1 !== 5} />
+							);
 						})}
 				</div>
 			</div>

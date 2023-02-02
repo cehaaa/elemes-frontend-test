@@ -1,25 +1,24 @@
 @import "./../../../scss/variables.scss";
 
-.navbar {
+.navbar__container {
 	height: 80px;
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	padding: 1.5rem 0;
+	background-color: white;
+}
+
+.navbar {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: 85%;
-	left: 50%;
-	transform: translateX(-50%);
-	position: fixed;
-	z-index: 10;
-	padding: 3rem 0;
-	top: 0;
-
-	.navbar__brand {
-	}
 
 	.navbar__items {
 		display: flex;
 		align-items: center;
-		font-size: $sm;
+		font-size: $base;
 		column-gap: 2rem;
 		position: relative;
 
@@ -49,5 +48,16 @@
 				right: -15px;
 			}
 		}
+	}
+}
+
+@media (max-width: $tablet) {
+	.navbar__brand {
+		width: 150px;
+		height: 36px;
+	}
+
+	.navbar__item {
+		display: none;
 	}
 }

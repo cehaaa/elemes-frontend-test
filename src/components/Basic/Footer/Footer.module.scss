@@ -1,0 +1,150 @@
+@import "./../../../scss/variables.scss";
+
+.footer__container {
+	width: 100%;
+}
+
+.footer {
+	width: 100%;
+	border-radius: 20px;
+	background: #f9fff6;
+	padding: 40px;
+	display: flex;
+	justify-content: space-between;
+	line-height: 1.5rem;
+
+	.footer__brand {
+		width: 340px;
+		color: $text-gray;
+
+		display: flex;
+		flex-direction: column;
+		row-gap: 1.5rem;
+
+		.logo {
+			width: 200px;
+			height: 50px;
+		}
+	}
+
+	.footer__items {
+		display: flex;
+		column-gap: 150px;
+
+		.footer__item__title {
+			color: $text-black;
+			margin-bottom: 33px;
+		}
+
+		.footer__item {
+			color: $text-gray;
+			margin-bottom: 19px;
+			cursor: pointer;
+			transition: 200ms;
+
+			&:hover {
+				color: $primary;
+			}
+		}
+	}
+
+	.company__socials {
+		display: flex;
+		align-items: center;
+		column-gap: 1rem;
+
+		.social {
+			cursor: pointer;
+			border-radius: 50%;
+			width: 40px;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			&:hover {
+				background: $primary;
+
+				& > svg > path {
+					stroke: white;
+				}
+			}
+		}
+	}
+
+	.company__contact {
+		display: flex;
+		column-gap: 1rem;
+		align-items: center;
+	}
+}
+
+.form__control {
+	width: 250px;
+	height: 40px;
+	border: 1px solid $text-gray;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+
+	.input {
+		outline: none;
+		border: none;
+		width: 70%;
+		padding: 0 16px;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	.button {
+		color: white;
+		background: $primary;
+		outline: none;
+		border: none;
+		height: 100%;
+		width: 30%;
+		cursor: pointer;
+
+		&:hover {
+			background: #638612;
+		}
+	}
+}
+
+.copyright {
+	display: flex;
+	justify-content: center;
+	padding: 2rem 0;
+	width: 100%;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: $sm;
+	color: $text-gray;
+	text-align: center;
+}
+
+@media (max-width: $mobile) {
+	.footer {
+		flex-direction: column;
+	}
+
+	.footer__items {
+		flex-direction: column;
+	}
+
+	.footer__item__title {
+		margin-bottom: 16px !important;
+		margin-top: 24px;
+	}
+
+	.footer__item {
+		margin-bottom: 8px !important;
+	}
+
+	.footer__container {
+		background: #f9fff6;
+	}
+}

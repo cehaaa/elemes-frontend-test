@@ -1,4 +1,4 @@
-@import "./../../../scss/variables.scss";
+@import "./../../scss/variables.scss";
 
 .rating__card__wrapper {
 	min-width: 292px;
@@ -38,14 +38,5 @@
 		display: flex;
 		align-items: center;
 		column-gap: 3px;
-
-		.star__rating {
-			width: 10px;
-			height: 10px;
-
-			&.active {
-				color: #ff8412;
-			}
-		}
 	}
 }

@@ -1,0 +1,45 @@
+@import "./../../scss/variables.scss";
+
+.category__card {
+	min-width: 230px;
+	min-height: 230px;
+	border-radius: 8px;
+	transition: 200ms;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+
+	text-align: center;
+
+	.category__card__title {
+		color: $text-black;
+		margin-bottom: 4px;
+		margin-top: 20px;
+	}
+
+	.category__card__text {
+		color: $text-gray;
+		font-size: 14px;
+	}
+
+	.background__image {
+		position: absolute;
+		background-image: url("./../../assets/background.png");
+		opacity: 0;
+		width: 100%;
+		height: 100%;
+		background-size: 100%;
+		transition: 200ms;
+		left: 0;
+	}
+
+	&:hover {
+		transform: scale(1.1);
+	}
+
+	&:hover > .background__image {
+		opacity: 0.08;
+	}
+}
