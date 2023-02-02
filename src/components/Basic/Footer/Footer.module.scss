@@ -129,6 +129,7 @@
 @media (max-width: $mobile) {
 	.footer {
 		flex-direction: column;
+		padding: 0px !important;
 	}
 
 	.footer__items {
